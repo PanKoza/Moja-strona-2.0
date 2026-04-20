@@ -3,7 +3,6 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import ServicesSection from './components/ServicesSection'
 import AboutSection from './components/AboutSection'
-import PortfolioSection from './components/PortfolioSection'
 import ProcessSection from './components/ProcessSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
@@ -16,7 +15,6 @@ function HomePage() {
       <HeroSection />
       <ServicesSection />
       <AboutSection />
-      <PortfolioSection />
       <ProcessSection />
       <ContactSection />
     </>

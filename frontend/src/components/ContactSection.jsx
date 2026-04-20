@@ -13,14 +13,14 @@ const contactInfo = [
   {
     icon: HiMail,
     label: 'Email',
-    value: 'kontakt@webgoat.pl',
-    href: 'mailto:kontakt@webgoat.pl',
+    value: 'jakub.kuzakowski@gmail.com',
+    href: 'mailto:jakub.kuzakowski@gmail.com',
   },
   {
     icon: HiPhone,
     label: 'Telefon',
-    value: '+48 123 456 789',
-    href: 'tel:+48123456789',
+    value: '+48 883 821 301',
+    href: 'tel:+48883821301',
   },
 ]
 

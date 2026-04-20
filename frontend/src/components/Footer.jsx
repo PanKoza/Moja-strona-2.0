@@ -10,7 +10,6 @@ const footerLinks = {
   ],
   'Firma': [
     { name: 'O nas', href: '/#o-nas' },
-    { name: 'Portfolio', href: '/#portfolio' },
     { name: 'Proces', href: '/#proces' },
     { name: 'Kontakt', href: '/#kontakt' },
   ],

@@ -138,10 +138,10 @@ export default function HeroSection() {
             <span className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </a>
           <a
-            href="#portfolio"
+            href="#kontakt"
             className="px-8 py-4 border border-primary-700 text-primary-300 font-semibold rounded-full hover:bg-primary-900/50 hover:border-primary-500 transition-all duration-300 hover:-translate-y-1"
           >
-            Zobacz realizacje
+            Skontaktuj się
           </a>
         </motion.div>
 
