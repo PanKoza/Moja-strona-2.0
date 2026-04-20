@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi'
 import AnimatedSection from './AnimatedSection'
-import FileUpload from './FileUpload'
 
 const contactInfo = [
   {
@@ -32,7 +31,6 @@ export default function ContactSection() {
     phone: '',
     message: '',
   })
-  const [file, setFile] = useState(null)
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
 
@@ -45,27 +43,17 @@ export default function ContactSection() {
     setSending(true)
 
     try {
-      const fd = new FormData()
-      fd.append('name', formData.name)
-      fd.append('email', formData.email)
-      fd.append('phone', formData.phone)
-      fd.append('message', formData.message)
-      if (file) {
-        fd.append('clientMaterial', file)
-      }
-
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch('https://formspree.io/f/mqabjynw', {
         method: 'POST',
-        body: fd,
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(e.target),
       })
 
       if (res.ok) {
         setSent(true)
         setFormData({ name: '', email: '', phone: '', message: '' })
-        setFile(null)
       } else {
-        const data = await res.json()
-        alert(data.message || 'Wystąpił błąd. Spróbuj ponownie.')
+        alert('Wystąpił błąd. Spróbuj ponownie.')
       }
     } catch {
       alert('Nie udało się wysłać wiadomości. Sprawdź połączenie i spróbuj ponownie.')
@@ -151,7 +139,7 @@ export default function ContactSection() {
                 </button>
               </motion.div>
             ) : (
-              <form onSubmit={handleSubmit} className="glass-card rounded-2xl p-8 space-y-6">
+              <form id="contact-form" action="https://formspree.io/f/mqabjynw" method="POST" onSubmit={handleSubmit} className="glass-card rounded-2xl p-8 space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1.5">
@@ -215,8 +203,6 @@ export default function ContactSection() {
                     placeholder="Opowiedz nam o swoim projekcie..."
                   />
                 </div>
-
-                <FileUpload onFileSelect={setFile} />
 
                 <button
                   type="submit"
