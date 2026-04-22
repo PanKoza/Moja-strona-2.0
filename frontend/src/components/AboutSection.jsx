@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import AnimatedSection from './AnimatedSection'
 
 const stats = [
@@ -74,7 +75,7 @@ export default function AboutSection() {
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
                 <strong className="text-white">WebGoat</strong> to zespół pasjonatów technologii z{' '}
                 <strong className="text-primary-300">Ząbkowic Śląskich</strong>. Specjalizujemy się
-                w tworzeniu nowoczesnych stron internetowych, sklepów online i aplikacji webowych,
+                w <Link to="/uslugi/strony-internetowe" className="text-primary-300 hover:text-primary-200 underline">tworzeniu nowoczesnych stron internetowych</Link>, sklepów online i aplikacji webowych,
                 które realnie przekładają się na rozwój biznesu naszych klientów.
               </p>
             </AnimatedSection>
@@ -84,7 +85,7 @@ export default function AboutSection() {
                 Łączymy <strong className="text-white">kreatywny design</strong> z{' '}
                 <strong className="text-white">najnowszymi technologiami</strong>, aby dostarczać
                 rozwiązania, które nie tylko świetnie wyglądają, ale też doskonale działają
-                i generują wymierne rezultaty.
+                i generują wymierne rezultaty. Naszym celem jest zapewnienie <Link to="/uslugi/pozycjonowanie-seo" className="text-primary-300 hover:text-primary-200 underline">pełnej optymalizacji SEO</Link> i najwyższej wydajności.
               </p>
             </AnimatedSection>
 

@@ -46,16 +46,125 @@ export default function ServicePage() {
     )
   }
 
-  // Update meta tags
+  // Update meta tags and canonical URL
   useEffect(() => {
     document.title = service.metaTitle
     const metaDesc = document.querySelector('meta[name="description"]')
     if (metaDesc) metaDesc.setAttribute('content', service.metaDescription)
 
+    // Update canonical URL
+    let canonicalLink = document.querySelector('link[rel="canonical"]')
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link')
+      canonicalLink.rel = 'canonical'
+      document.head.appendChild(canonicalLink)
+    }
+    canonicalLink.href = `https://webgoat.pl/uslugi/${slug}`
+
+    // Update Open Graph tags
+    const ogTitle = document.querySelector('meta[property="og:title"]')
+    if (ogTitle) ogTitle.setAttribute('content', service.metaTitle)
+    const ogDesc = document.querySelector('meta[property="og:description"]')
+    if (ogDesc) ogDesc.setAttribute('content', service.metaDescription)
+    const ogUrl = document.querySelector('meta[property="og:url"]')
+    if (ogUrl) ogUrl.setAttribute('content', `https://webgoat.pl/uslugi/${slug}`)
+
+    // Add FAQPage Schema
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": service.faq.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a
+        }
+      }))
+    }
+    
+    let faqScriptTag = document.getElementById('faq-schema')
+    if (!faqScriptTag) {
+      faqScriptTag = document.createElement('script')
+      faqScriptTag.id = 'faq-schema'
+      faqScriptTag.type = 'application/ld+json'
+      document.head.appendChild(faqScriptTag)
+    }
+    faqScriptTag.textContent = JSON.stringify(faqSchema)
+
+    // Add Service Schema
+    const serviceSchema = {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": service.title,
+      "description": service.metaDescription,
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "WebGoat",
+        "url": "https://webgoat.pl",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ząbkowice Śląskie",
+          "addressRegion": "Dolnośląskie",
+          "postalCode": "57-200",
+          "addressCountry": "PL"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ząbkowice Śląskie"
+      },
+      "priceRange": "$$"
+    }
+
+    let serviceScriptTag = document.getElementById('service-schema')
+    if (!serviceScriptTag) {
+      serviceScriptTag = document.createElement('script')
+      serviceScriptTag.id = 'service-schema'
+      serviceScriptTag.type = 'application/ld+json'
+      document.head.appendChild(serviceScriptTag)
+    }
+    serviceScriptTag.textContent = JSON.stringify(serviceSchema)
+
+    // Add Breadcrumb Schema
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "WebGoat",
+          "item": "https://webgoat.pl"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Usługi",
+          "item": "https://webgoat.pl/#uslugi"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": service.title,
+          "item": `https://webgoat.pl/uslugi/${slug}`
+        }
+      ]
+    }
+
+    let breadcrumbScriptTag = document.getElementById('breadcrumb-schema')
+    if (!breadcrumbScriptTag) {
+      breadcrumbScriptTag = document.createElement('script')
+      breadcrumbScriptTag.id = 'breadcrumb-schema'
+      breadcrumbScriptTag.type = 'application/ld+json'
+      document.head.appendChild(breadcrumbScriptTag)
+    }
+    breadcrumbScriptTag.textContent = JSON.stringify(breadcrumbSchema)
+
     return () => {
       document.title = 'WebGoat - Profesjonalne Strony Internetowe | Ząbkowice Śląskie'
     }
-  }, [service])
+  }, [service, slug])
 
   const Icon = service.icon
 

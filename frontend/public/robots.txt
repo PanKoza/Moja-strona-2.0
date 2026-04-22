@@ -1,0 +1,22 @@
+# WebGoat robots.txt
+# Pozwala crawlerom Google i innym wyszukiwarkom na indeksację całej strony
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/private
+
+# Dedykowany dla Googlebota
+User-agent: Googlebot
+Allow: /
+
+# Dedykowany dla Bingbota
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://webgoat.pl/sitemap.xml
+
+# Crawl delay dla wszystkich robotów
+Crawl-delay: 1
+Request-rate: 30/60

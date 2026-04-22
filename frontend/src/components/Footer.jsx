@@ -45,8 +45,8 @@ export default function Footer() {
               </span>
             </a>
             <p className="text-gray-400 text-sm leading-relaxed max-w-md mb-6">
-              Profesjonalne tworzenie stron internetowych w Ząbkowicach Śląskich.
-              Nowoczesne technologie, kreatywny design i indywidualne podejście do każdego projektu.
+              Specjalizujemy się w <strong className="text-primary-300">tworzeniu stron internetowych</strong> w Ząbkowicach Śląskich i na Dolnym Śląsku.
+              Nowoczesne technologie, kreatywny design i indywidualne podejście do każdego projektu biznesowego.
             </p>
             <div className="flex gap-4">
               {/* Social icons placeholder */}

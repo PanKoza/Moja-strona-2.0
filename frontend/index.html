@@ -2,40 +2,100 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta name="description" content="WebGoat - Profesjonalne tworzenie stron internetowych w Ząbkowicach Śląskich. Nowoczesne strony WWW, sklepy internetowe, pozycjonowanie SEO. Obsługujemy firmy z Ząbkowic Śląskich i okolic Dolnego Śląska." />
-    <meta name="keywords" content="strony internetowe Ząbkowice Śląskie, tworzenie stron www, web development Dolny Śląsk, projektowanie stron, sklepy internetowe, SEO Ząbkowice, WebGoat" />
+    <meta name="keywords" content="tworzenie stron internetowych, strony internetowe Ząbkowice Śląskie, web development Dolny Śląsk, projektowanie stron, sklepy internetowe, SEO, WebGoat" />
     <meta name="author" content="WebGoat" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="theme-color" content="#1a1a2e" />
     <meta name="geo.region" content="PL-DS" />
     <meta name="geo.placename" content="Ząbkowice Śląskie" />
+    <meta name="geo.position" content="50.5906;16.8114" />
+    <meta name="ICBM" content="50.5906, 16.8114" />
+    <meta name="language" content="Polish" />
+    <meta name="revisit-after" content="7 days" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="WebGoat - Strony Internetowe Ząbkowice Śląskie" />
-    <meta property="og:description" content="Profesjonalne tworzenie stron internetowych, sklepów online i aplikacji webowych. Lokalny partner technologiczny w Ząbkowicach Śląskich." />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://webgoat.pl/" />
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webgoat.pl/" />
+    <meta property="og:title" content="WebGoat - Profesjonalne Tworzenie Stron Internetowych | Ząbkowice Śląskie" />
+    <meta property="og:description" content="Specjalizujemy się w tworzeniu nowoczesnych stron internetowych, sklepów online i aplikacji webowych. Lokalne SEO dla firm z Ząbkowic Śląskich i Dolnego Śląska." />
+    <meta property="og:image" content="https://webgoat.pl/logo_WebGoat.png" />
     <meta property="og:locale" content="pl_PL" />
-    <meta property="og:image" content="/logo_WebGoat.png" />
+    <meta property="og:site_name" content="WebGoat" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WebGoat - Profesjonalne Tworzenie Stron Internetowych" />
+    <meta name="twitter:description" content="Tworzenie nowoczesnych stron internetowych, sklepów online i aplikacji webowych w Ząbkowicach Śląskich" />
+    <meta name="twitter:image" content="https://webgoat.pl/logo_WebGoat.png" />
+
+    <!-- Search Console & Analytics verification -->
+    <meta name="google-site-verification" content="" />
 
     <link rel="icon" type="image/png" href="/logo_WebGoat.png" />
+    <link rel="apple-touch-icon" href="/logo_WebGoat.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <title>WebGoat - Profesjonalne Strony Internetowe | Ząbkowice Śląskie</title>
+    <title>WebGoat - Profesjonalne Tworzenie Stron Internetowych | Ząbkowice Śląskie</title>
 
-    <!-- Schema.org LocalBusiness -->
+    <!-- Schema.org - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "WebGoat",
+      "alternateName": "WebGoat - Tworzenie Stron Internetowych",
+      "url": "https://webgoat.pl",
+      "logo": "https://webgoat.pl/logo_WebGoat.png",
+      "description": "Profesjonalne tworzenie stron internetowych, sklepów online i aplikacji webowych w Ząbkowicach Śląskich",
+      "sameAs": [
+        "https://www.facebook.com/webgoat",
+        "https://www.linkedin.com/company/webgoat"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "availableLanguage": "pl"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ząbkowice Śląskie"
+        },
+        {
+          "@type": "State",
+          "name": "Dolnośląskie"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Schema.org - LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "WebGoat",
+      "image": "https://webgoat.pl/logo_WebGoat.png",
       "description": "Profesjonalne tworzenie stron internetowych, sklepów online i aplikacji webowych w Ząbkowicach Śląskich.",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Ząbkowice Śląskie",
         "addressLocality": "Ząbkowice Śląskie",
         "addressRegion": "Dolnośląskie",
+        "postalCode": "57-200",
         "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.5906,
+        "longitude": 16.8114
       },
       "areaServed": {
         "@type": "GeoCircle",
@@ -44,9 +104,54 @@
           "latitude": 50.5906,
           "longitude": 16.8114
         },
-        "geoRadius": "50000"
+        "geoRadius": "50000m"
       },
-      "serviceType": ["Tworzenie stron internetowych", "Sklepy internetowe", "Pozycjonowanie SEO", "Aplikacje webowe"],
+      "serviceType": [
+        "Tworzenie stron internetowych",
+        "Sklepy internetowe",
+        "Pozycjonowanie SEO",
+        "Aplikacje webowe",
+        "Web development"
+      ],
+      "priceRange": "$$",
+      "url": "https://webgoat.pl"
+    }
+    </script>
+
+    <!-- Schema.org - WebSite with Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "WebGoat",
+      "url": "https://webgoat.pl",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://webgoat.pl/szukaj?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Schema.org - Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Tworzenie Stron Internetowych",
+      "description": "Profesjonalne tworzenie nowoczesnych, responsywnych stron internetowych dla firm z Ząbkowic Śląskich i Dolnego Śląska. Strony zoptymalizowane pod SEO, błyskawicznie ładujące się i przyciągające klientów.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "WebGoat",
+        "url": "https://webgoat.pl"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ząbkowice Śląskie"
+      },
       "priceRange": "$$"
     }
     </script>

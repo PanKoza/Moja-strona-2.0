@@ -100,17 +100,29 @@ export default function HeroSection() {
           </motion.span>
         </motion.div>
 
-        {/* Main heading */}
+        {/* Main heading - SEO optimized -->
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-heading)] text-white leading-tight mb-6"
         >
-          Profesjonalne{' '}
+          Tworzenie Stron Internetowych{' '}
           <br className="hidden sm:block" />
-          <TypingText />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-300 to-accent-400">
+            <TypingText />
+          </span>
         </motion.h1>
+
+        {/* Subheading for hierarchy */}
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
+          className="text-xl sm:text-2xl font-semibold text-gray-300 mb-4"
+        >
+          Profesjonalne usługi webowe w Ząbkowicach Śląskich
+        </motion.h2>
 
         {/* Subtitle */}
         <motion.p
@@ -119,8 +131,9 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.2 }}
           className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Tworzymy nowoczesne rozwiązania cyfrowe, które przyciągają klientów
-          i rozwijają Twój biznes w <strong className="text-primary-300">Ząbkowicach Śląskich</strong> i na Dolnymśląsku.
+          Nowoczesne strony internetowe, sklepy e-commerce, aplikacje webowe i pozycjonowanie SEO.
+          Pomagamy firmom z <strong className="text-primary-300">Dolnego Śląska</strong> zajmować pierwszą pozycję
+          w wynikach wyszukiwania Google i przyciągać więcej klientów.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -134,14 +147,14 @@ export default function HeroSection() {
             href="#kontakt"
             className="group relative px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-full overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/30 hover:-translate-y-1"
           >
-            <span className="relative z-10">Rozpocznij projekt</span>
+            <span className="relative z-10">Wycena strony internetowej</span>
             <span className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </a>
           <a
             href="#kontakt"
             className="px-8 py-4 border border-primary-700 text-primary-300 font-semibold rounded-full hover:bg-primary-900/50 hover:border-primary-500 transition-all duration-300 hover:-translate-y-1"
           >
-            Skontaktuj się
+            Kontakt - Tworzenie Stron
           </a>
         </motion.div>
 

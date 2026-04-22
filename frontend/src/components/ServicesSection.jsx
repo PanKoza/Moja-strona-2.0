@@ -55,7 +55,7 @@ export default function ServicesSection() {
             Kompleksowe rozwiązania <span className="text-gradient">cyfrowe</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Od projektu graficznego po wdrożenie i pozycjonowanie — zapewniamy pełen zakres usług webowych.
+            Oferujemy profesjonalne usługi <strong className="text-primary-300">tworzenia stron internetowych</strong>, e-commerce, SEO i aplikacji webowych dla firm z Ząbkowic Śląskich i Dolnego Śląska.
           </p>
         </AnimatedSection>
 
