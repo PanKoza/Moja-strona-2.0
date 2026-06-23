@@ -55,7 +55,12 @@ export default function ServicesSection() {
             Kompleksowe rozwiązania <span className="text-gradient">cyfrowe</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Oferujemy profesjonalne usługi <strong className="text-primary-300">tworzenia stron internetowych</strong>, e-commerce, SEO i aplikacji webowych dla firm z Ząbkowic Śląskich i Dolnego Śląska.
+            Oferujemy profesjonalne usługi <strong className="text-primary-300">tworzenia stron internetowych</strong>, e-commerce, SEO i aplikacji webowych dla firm z{' '}
+            <strong className="text-white">Ząbkowic Śląskich</strong>,{' '}
+            <strong className="text-white">Kłodzka</strong>,{' '}
+            <strong className="text-white">Dzierżoniowa</strong>,{' '}
+            <strong className="text-white">Kamieńca Ząbkowickiego</strong>{' '}
+            i całego Dolnego Śląska.
           </p>
         </AnimatedSection>
 

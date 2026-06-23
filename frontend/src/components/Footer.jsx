@@ -1,4 +1,4 @@
-import { HiHeart } from 'react-icons/hi'
+import { HiHeart, HiPhone, HiMail, HiLocationMarker } from 'react-icons/hi'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 
 const footerLinks = {
@@ -12,6 +12,12 @@ const footerLinks = {
     { name: 'O nas', href: '/#o-nas' },
     { name: 'Proces', href: '/#proces' },
     { name: 'Kontakt', href: '/#kontakt' },
+  ],
+  'Lokalizacje': [
+    { name: 'Ząbkowice Śląskie', href: '/lokalizacja/zabkowice-slaskie' },
+    { name: 'Kłodzko', href: '/lokalizacja/klodzko' },
+    { name: 'Dzierżoniów', href: '/lokalizacja/dzierzoniow' },
+    { name: 'Kamieniec Ząbkowicki', href: '/lokalizacja/kamieniec-zabkowicki' },
   ],
 }
 
@@ -35,7 +41,7 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-primary-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/#hero" onClick={(e) => handleHashClick(e, '/#hero')} className="inline-flex items-center gap-3 mb-4">
@@ -44,10 +50,36 @@ export default function Footer() {
                 Web<span className="text-primary-400">Goat</span>
               </span>
             </a>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-md mb-6">
+            <p className="text-gray-400 text-sm leading-relaxed max-w-md mb-4">
               Specjalizujemy się w <strong className="text-primary-300">tworzeniu stron internetowych</strong> w Ząbkowicach Śląskich i na Dolnym Śląsku.
               Nowoczesne technologie, kreatywny design i indywidualne podejście do każdego projektu biznesowego.
             </p>
+            {/* NAP - Name Address Phone — widoczne dla Google i użytkowników */}
+            <address className="not-italic text-sm text-gray-400 space-y-2 mb-4">
+              <a
+                href="https://maps.google.com/?q=Z%C4%85bkowice+%C5%9Al%C4%85skie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-primary-300 transition-colors"
+              >
+                <HiLocationMarker className="w-4 h-4 text-primary-400 flex-shrink-0" />
+                Ząbkowice Śląskie, Dolny Śląsk
+              </a>
+              <a
+                href="tel:+48883821301"
+                className="flex items-center gap-2 hover:text-primary-300 transition-colors"
+              >
+                <HiPhone className="w-4 h-4 text-primary-400 flex-shrink-0" />
+                +48 883 821 301
+              </a>
+              <a
+                href="mailto:jakub.kuzakowski@gmail.com"
+                className="flex items-center gap-2 hover:text-primary-300 transition-colors"
+              >
+                <HiMail className="w-4 h-4 text-primary-400 flex-shrink-0" />
+                jakub.kuzakowski@gmail.com
+              </a>
+            </address>
             <div className="flex gap-4">
               {/* Social icons placeholder */}
               {['facebook', 'instagram', 'linkedin'].map((social) => (

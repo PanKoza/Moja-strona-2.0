@@ -80,6 +80,17 @@ export default function AboutSection() {
               </p>
             </AnimatedSection>
 
+            <AnimatedSection delay={0.25}>
+              <p className="text-gray-400 text-lg leading-relaxed mb-6">
+                Obsługujemy firmy z{' '}
+                <Link to="/lokalizacja/zabkowice-slaskie" className="text-primary-300 hover:text-primary-200 underline">Ząbkowic Śląskich</Link>,{' '}
+                <Link to="/lokalizacja/klodzko" className="text-primary-300 hover:text-primary-200 underline">Kłodzka</Link>,{' '}
+                <Link to="/lokalizacja/dzierzoniow" className="text-primary-300 hover:text-primary-200 underline">Dzierżoniowa</Link>,{' '}
+                <Link to="/lokalizacja/kamieniec-zabkowicki" className="text-primary-300 hover:text-primary-200 underline">Kamieńca Ząbkowickiego</Link>{' '}
+                i całego Dolnego Śląska.
+              </p>
+            </AnimatedSection>
+
             <AnimatedSection delay={0.3}>
               <p className="text-gray-400 text-lg leading-relaxed mb-8">
                 Łączymy <strong className="text-white">kreatywny design</strong> z{' '}

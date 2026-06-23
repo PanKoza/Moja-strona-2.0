@@ -8,6 +8,7 @@ import ProcessSection from './components/ProcessSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import ServicePage from './components/ServicePage'
+import LocalCityPage from './components/LocalCityPage'
 import ScrollToHash from './components/ScrollToHash'
 
 function HomePage() {
@@ -32,6 +33,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/uslugi/:slug" element={<ServicePage />} />
+            <Route path="/lokalizacja/:city" element={<LocalCityPage />} />
           </Routes>
         </main>
         <Footer />
