@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import AnimatedSection, { StaggerContainer, StaggerItem } from './AnimatedSection'
 
 const categories = ['Wszystkie', 'Strony WWW', 'Sklepy', 'Aplikacje']
@@ -153,6 +154,22 @@ export default function PortfolioSection() {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {/* Link to full portfolio page */}
+        <AnimatedSection delay={0.4} className="text-center mt-12">
+          <Link
+            to="/portfolio"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-full hover:shadow-xl hover:shadow-primary-500/30 hover:-translate-y-1 transition-all duration-300"
+          >
+            Zobacz wszystkie realizacje
+            <motion.span
+              animate={{ x: [0, 5, 0] }}
+              transition={{ duration: 1.2, repeat: Infinity }}
+            >
+              →
+            </motion.span>
+          </Link>
+        </AnimatedSection>
       </div>
     </section>
   )
