@@ -30,8 +30,10 @@ export default function Navbar() {
     if (location.pathname !== '/') {
       navigate('/' + href)
     } else {
-      const el = document.querySelector(href)
-      if (el) el.scrollIntoView({ behavior: 'smooth' })
+      setTimeout(() => {
+        const el = document.querySelector(href)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 350)
     }
   }
 
