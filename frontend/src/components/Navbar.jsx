@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiMenu, HiX } from 'react-icons/hi'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate, useLocation, Link } from 'react-router-dom'
 
 const navLinks = [
   { name: 'Start', href: '#hero' },
@@ -72,6 +72,13 @@ export default function Navbar() {
               <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary-400 group-hover:w-2/3 transition-all duration-300" />
             </a>
           ))}
+          <Link
+            to="/dlaczego-strona-internetowa"
+            className="relative px-4 py-2 text-sm font-medium text-yellow-400 hover:text-yellow-300 transition-colors group"
+          >
+            💡 Dlaczego strona?
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-yellow-400 group-hover:w-2/3 transition-all duration-300" />
+          </Link>
           <a
             href="#kontakt"
             onClick={(e) => handleClick(e, '#kontakt')}
@@ -115,6 +122,13 @@ export default function Navbar() {
                   {link.name}
                 </motion.a>
               ))}
+              <Link
+                to="/dlaczego-strona-internetowa"
+                onClick={() => setMobileOpen(false)}
+                className="block px-4 py-3 text-yellow-400 hover:text-yellow-300 hover:bg-white/5 rounded-lg transition-colors font-medium"
+              >
+                💡 Dlaczego strona?
+              </Link>
               <a
                 href="#kontakt"
                 onClick={(e) => handleClick(e, '#kontakt')}

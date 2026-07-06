@@ -7,7 +7,7 @@ const steps = [
     icon: HiChat,
     number: '01',
     title: 'Konsultacja',
-    description: 'Poznajemy Twoje potrzeby, cele biznesowe i wizję projektu. Analizujemy rynek i konkurencję w Ząbkowicach Śląskich.',
+    description: 'Poznajemy Twoje potrzeby, cele biznesowe i wizję projektu. Analizujemy rynek i konkurencję.',
   },
   {
     icon: HiPencil,
