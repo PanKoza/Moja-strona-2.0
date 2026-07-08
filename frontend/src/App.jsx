@@ -15,6 +15,7 @@ import PromoSection from './components/PromoSection'
 import WhyWebsiteTeaser from './components/WhyWebsiteTeaser'
 import WhyWebsitePage from './components/WhyWebsitePage'
 import PortfolioPage from './components/PortfolioPage'
+import CertificatesPage from './components/CertificatesPage'
 
 function HomePage() {
   return (
@@ -44,6 +45,7 @@ function App() {
               <Route path="/lokalizacja/:city" element={<LocalCityPage />} />
               <Route path="/dlaczego-strona-internetowa" element={<WhyWebsitePage />} />
               <Route path="/portfolio" element={<PortfolioPage />} />
+              <Route path="/certyfikaty" element={<CertificatesPage />} />
             </Routes>
           </main>
           <Footer />
