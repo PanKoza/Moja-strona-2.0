@@ -65,6 +65,16 @@ const projects = [
     tag: 'Strona klubu',
   },
   {
+    title: 'Wzorujemy.pl',
+    url: 'https://wzorujemy-pl.vercel.app/',
+    category: 'Sklepy',
+    description: 'Sklep internetowy z ręcznie robionymi etui i akcesoriami ze skóry Alcantara z personalizacją grawerem laserowym. Konfiguracja produktu online, integracja płatności Przelewy24 i dostawa InPost.',
+    tech: ['React', 'Next.js', 'E-commerce'],
+    gradient: 'from-amber-700 to-yellow-900',
+    icon: '🛍️',
+    tag: 'Sklep internetowy',
+  },
+  {
     title: 'Pizza Friends',
     url: 'https://pizzafriends.vercel.app/',
     category: 'Sklepy',
@@ -84,6 +94,7 @@ const projects = [
     icon: '🎰',
     tag: 'Aplikacja webowa',
   },
+  
 ]
 
 const categories = ['Wszystkie', 'Strony WWW', 'Sklepy', 'Aplikacje']
