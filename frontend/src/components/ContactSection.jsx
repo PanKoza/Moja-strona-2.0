@@ -109,6 +109,19 @@ export default function ContactSection() {
                 <p className="text-xs text-gray-500">Dolnośląskie, Polska</p>
               </div>
             </div>
+
+            {/* Local social proof */}
+            <div className="mt-6 p-4 rounded-xl bg-primary-900/20 border border-primary-800/40">
+              <p className="text-xs font-semibold text-primary-400 uppercase tracking-wider mb-2">Obsługuję cały Dolny Śląsk</p>
+              <div className="flex flex-wrap gap-2">
+                {['Wrocław', 'Kłodzko', 'Ząbkowice Śl.', 'Świdnica', 'Dzierżoniów', 'Nysa'].map(city => (
+                  <span key={city} className="px-2.5 py-1 text-xs text-gray-300 bg-white/5 border border-white/10 rounded-full">
+                    📍 {city}
+                  </span>
+                ))}
+              </div>
+              <p className="mt-3 text-xs text-gray-500">Lokalne firmy, rzemieślnicy i przedsiębiorcy — pomogłem już wielu z nich zaistnieć w sieci.</p>
+            </div>
           </AnimatedSection>
 
           {/* Contact form */}
@@ -139,7 +152,18 @@ export default function ContactSection() {
                 </button>
               </motion.div>
             ) : (
-              <form id="contact-form" action="https://formspree.io/f/mqabjynw" method="POST" onSubmit={handleSubmit} className="glass-card rounded-2xl p-8 space-y-6">
+              <div className="relative">
+                {/* Terminal frame decoration */}
+                <div className="absolute -top-3 -left-3 text-2xl font-mono text-primary-500/40 font-bold select-none">&lt;</div>
+                <div className="absolute -bottom-3 -right-3 text-2xl font-mono text-primary-500/40 font-bold select-none">/&gt;</div>
+                <form id="contact-form" action="https://formspree.io/f/mqabjynw" method="POST" onSubmit={handleSubmit} className="glass-card rounded-2xl p-8 space-y-6 border border-primary-800/30">
+                {/* Terminal header bar */}
+                <div className="flex items-center gap-2 -mt-2 mb-2 pb-4 border-b border-primary-800/30">
+                  <span className="w-3 h-3 rounded-full bg-red-500/60" />
+                  <span className="w-3 h-3 rounded-full bg-yellow-500/60" />
+                  <span className="w-3 h-3 rounded-full bg-green-500/60" />
+                  <span className="ml-3 text-xs font-mono text-gray-500">konsultacja.init()</span>
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1.5">
@@ -207,7 +231,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={sending}
-                  className="group relative w-full px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/30 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="group relative w-full px-8 py-4 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white font-bold text-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/40 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     {sending ? (
@@ -219,12 +243,17 @@ export default function ContactSection() {
                         Wysyłanie...
                       </>
                     ) : (
-                      'Wyślij wiadomość'
+                      '🎯 Odbierz darmową wycenę'
                     )}
                   </span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </button>
+
+                {/* Trust anchor */}
+                <p className="text-center text-sm text-gray-400 font-medium -mt-2">
+                  Zero zobowiązań. Odpowiadam w ciągu 24h.
+                </p>
               </form>
+              </div>
             )}
           </AnimatedSection>
         </div>

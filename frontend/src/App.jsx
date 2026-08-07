@@ -16,6 +16,7 @@ import WhyWebsiteTeaser from './components/WhyWebsiteTeaser'
 import WhyWebsitePage from './components/WhyWebsitePage'
 import PortfolioPage from './components/PortfolioPage'
 import CertificatesPage from './components/CertificatesPage'
+import FloatingContact from './components/FloatingContact'
 
 function HomePage() {
   return (
@@ -49,6 +50,7 @@ function App() {
             </Routes>
           </main>
           <Footer />
+          <FloatingContact />
           <Analytics />
         </div>
       </BrowserRouter>

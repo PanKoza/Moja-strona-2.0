@@ -98,9 +98,9 @@ export default function Navbar() {
           <a
             href="#kontakt"
             onClick={(e) => handleClick(e, '#kontakt')}
-            className="ml-4 px-6 py-2.5 bg-gradient-to-r from-primary-600 to-primary-500 text-white text-sm font-semibold rounded-full hover:from-primary-500 hover:to-primary-400 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5"
+            className="ml-4 px-6 py-2.5 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white text-sm font-bold rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/40 hover:-translate-y-0.5 hover:scale-105"
           >
-            Darmowa wycena
+            Odbierz darmową wycenę
           </a>
         </div>
 
@@ -162,9 +162,9 @@ export default function Navbar() {
               <a
                 href="#kontakt"
                 onClick={(e) => handleClick(e, '#kontakt')}
-                className="block text-center mt-4 px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-full"
+                className="block text-center mt-4 px-6 py-3 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white font-bold rounded-full shadow-lg shadow-orange-500/30"
               >
-                Darmowa wycena
+                Odbierz darmową wycenę
               </a>
             </div>
           </motion.div>

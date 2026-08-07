@@ -151,11 +151,11 @@ export default function PromoSection() {
         >
           <motion.a
             href="#kontakt"
-            whileHover={{ scale: 1.06, boxShadow: '0 0 30px rgba(251,191,36,0.4)' }}
+            whileHover={{ scale: 1.08, boxShadow: '0 0 40px rgba(251,146,60,0.6)' }}
             whileTap={{ scale: 0.97 }}
-            className="relative px-10 py-4 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white font-bold text-lg rounded-full overflow-hidden shadow-xl"
+            className="relative px-12 py-5 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white font-extrabold text-xl rounded-full overflow-hidden shadow-2xl shadow-orange-500/40 ring-2 ring-orange-400/40"
           >
-            <span className="relative z-10">Zamów stronę za 750 zł</span>
+            <span className="relative z-10">🎯 Odbierz darmową wycenę</span>
             <motion.span
               className="absolute inset-0 bg-white/20"
               initial={{ x: '-100%' }}
@@ -166,7 +166,7 @@ export default function PromoSection() {
 
           <Link
             to="/dlaczego-strona-internetowa"
-            className="group flex items-center gap-2 px-8 py-4 border border-primary-600 text-primary-300 font-semibold rounded-full hover:bg-primary-900/50 hover:border-primary-400 transition-all duration-300"
+            className="group flex items-center gap-2 px-8 py-4 border border-white/20 text-gray-400 font-medium text-sm rounded-full hover:bg-white/5 hover:border-white/30 hover:text-gray-300 transition-all duration-300"
           >
             Dlaczego warto mieć stronę?
             <motion.span
@@ -178,13 +178,24 @@ export default function PromoSection() {
           </Link>
         </motion.div>
 
+        {/* Trust anchor */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.75 }}
+          className="mt-4 text-sm text-gray-400 font-medium"
+        >
+          Zero zobowiązań. Odpowiadam w ciągu 24h.
+        </motion.p>
+
         {/* Trust signals */}
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-6 text-sm text-gray-500"
+          className="mt-2 text-sm text-gray-500"
         >
           Bez ukrytych kosztów · Stała cena · Gwarancja satysfakcji
         </motion.p>
