@@ -17,6 +17,7 @@ import WhyWebsitePage from './components/WhyWebsitePage'
 import PortfolioPage from './components/PortfolioPage'
 import CertificatesPage from './components/CertificatesPage'
 import FloatingContact from './components/FloatingContact'
+import CookieConsent from './components/CookieConsent'
 
 function HomePage() {
   return (
@@ -51,6 +52,7 @@ function App() {
           </main>
           <Footer />
           <FloatingContact />
+          <CookieConsent />
           <Analytics />
         </div>
       </BrowserRouter>
