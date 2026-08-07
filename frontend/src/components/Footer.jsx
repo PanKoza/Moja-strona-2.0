@@ -14,10 +14,16 @@ const footerLinks = {
     { name: 'Kontakt', href: '/#kontakt' },
   ],
   'Lokalizacje': [
-    { name: 'Ząbkowice Śląskie', href: '/lokalizacja/zabkowice-slaskie' },
+    { name: 'Wrocław', href: '/lokalizacja/wroclaw' },
+    { name: 'Świdnica', href: '/lokalizacja/swidnica' },
     { name: 'Kłodzko', href: '/lokalizacja/klodzko' },
     { name: 'Dzierżoniów', href: '/lokalizacja/dzierzoniow' },
-    { name: 'Kamieniec Ząbkowicki', href: '/lokalizacja/kamieniec-zabkowicki' },
+    { name: 'Ząbkowice Śląskie', href: '/lokalizacja/zabkowice-slaskie' },
+    { name: 'Nysa', href: '/lokalizacja/nysa' },
+    { name: 'Oława', href: '/lokalizacja/olawa' },
+    { name: 'Trzebnica', href: '/lokalizacja/trzebnica' },
+    { name: 'Prusice', href: '/lokalizacja/prusice' },
+    { name: 'Dolnośląskie', href: '/lokalizacja/dolnoslaskie' },
   ],
 }
 

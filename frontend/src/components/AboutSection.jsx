@@ -83,11 +83,16 @@ export default function AboutSection() {
             <AnimatedSection delay={0.25}>
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
                 Obsługujemy firmy z{' '}
-                <Link to="/lokalizacja/zabkowice-slaskie" className="text-primary-300 hover:text-primary-200 underline">Ząbkowic Śląskich</Link>,{' '}
+                <Link to="/lokalizacja/wroclaw" className="text-primary-300 hover:text-primary-200 underline">Wrocławia</Link>,{' '}
+                <Link to="/lokalizacja/swidnica" className="text-primary-300 hover:text-primary-200 underline">Świdnicy</Link>,{' '}
                 <Link to="/lokalizacja/klodzko" className="text-primary-300 hover:text-primary-200 underline">Kłodzka</Link>,{' '}
                 <Link to="/lokalizacja/dzierzoniow" className="text-primary-300 hover:text-primary-200 underline">Dzierżoniowa</Link>,{' '}
-                <Link to="/lokalizacja/kamieniec-zabkowicki" className="text-primary-300 hover:text-primary-200 underline">Kamieńca Ząbkowickiego</Link>{' '}
-                i całego Dolnego Śląska.
+                <Link to="/lokalizacja/zabkowice-slaskie" className="text-primary-300 hover:text-primary-200 underline">Ząbkowic Śląskich</Link>,{' '}
+                <Link to="/lokalizacja/nysa" className="text-primary-300 hover:text-primary-200 underline">Nysy</Link>,{' '}
+                <Link to="/lokalizacja/olawa" className="text-primary-300 hover:text-primary-200 underline">Oławy</Link>,{' '}
+                <Link to="/lokalizacja/trzebnica" className="text-primary-300 hover:text-primary-200 underline">Trzebnicy</Link>,{' '}
+                <Link to="/lokalizacja/prusice" className="text-primary-300 hover:text-primary-200 underline">Prusic</Link>{' '}
+                i całego <Link to="/lokalizacja/dolnoslaskie" className="text-primary-300 hover:text-primary-200 underline">Dolnego Śląska</Link>.
               </p>
             </AnimatedSection>
 
