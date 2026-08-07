@@ -1,9 +1,10 @@
 import { useParams, Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { HiArrowLeft, HiCheck, HiPhone, HiMail, HiChevronDown, HiLocationMarker } from 'react-icons/hi'
+import { HiArrowLeft, HiCheck, HiPhone, HiMail, HiChevronDown, HiLocationMarker, HiLightningBolt } from 'react-icons/hi'
 import citiesData from '../data/citiesData'
 import AnimatedSection, { StaggerContainer, StaggerItem } from './AnimatedSection'
+import PromoSection from './PromoSection'
 
 const SERVICES = [
   { label: 'Strony internetowe', href: '/uslugi/strony-internetowe' },
@@ -195,8 +196,43 @@ export default function LocalCityPage() {
               </a>
             </div>
           </motion.div>
+
+          {/* Baner z ofertą dla nowych klientów z danego miasta */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-10 relative overflow-hidden rounded-2xl border border-primary-600/40 bg-gradient-to-r from-primary-900/60 via-primary-800/40 to-primary-900/60 p-6 sm:p-8"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-600/10 to-transparent pointer-events-none" />
+            <div className="relative flex flex-col sm:flex-row sm:items-center gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-primary-600/30 rounded-xl flex items-center justify-center">
+                <HiLightningBolt className="w-6 h-6 text-primary-300" />
+              </div>
+              <div className="flex-1">
+                <p className="text-xs font-semibold text-primary-400 uppercase tracking-widest mb-1">
+                  Oferta dla nowych klientów z {cityData.nameGenitive}
+                </p>
+                <p className="text-white font-bold text-lg leading-snug">
+                  Darmowa konsultacja + audyt SEO w prezencie
+                </p>
+                <p className="text-gray-400 text-sm mt-1">
+                  Dla pierwszych 3 firm z {cityData.nameGenitive} zgłoszonych w tym miesiącu — bezpłatny audyt strony (wartość 500 zł) gratis przy zamówieniu.
+                </p>
+              </div>
+              <a
+                href="/#kontakt"
+                className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white text-sm font-semibold rounded-xl transition-all hover:scale-105 whitespace-nowrap"
+              >
+                Skorzystaj teraz
+              </a>
+            </div>
+          </motion.div>
+
         </div>
       </section>
+
+      <PromoSection />
 
       {/* ===== DLACZEGO MY ===== */}
       <section className="py-20">
