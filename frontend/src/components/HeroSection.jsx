@@ -61,10 +61,15 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full mb-8 border border-primary/25 bg-primary/8 backdrop-blur-md shadow-lg shadow-primary/10"
         >
-          <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          <span className="text-sm text-gray-300">Ząbkowice Śl. · Kłodzko · Dzierżoniów · Dolny Śląsk</span>
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
+          </span>
+          <span className="text-xs font-medium tracking-wide text-gray-300">
+            📍 Ząbkowice Śl. · Kłodzko · Dzierżoniów · Dolny Śląsk
+          </span>
         </motion.div>
 
         {/* Animated code brackets */}
@@ -85,7 +90,7 @@ export default function HeroSection() {
           <motion.img
             src="/logo_WebGoat.png"
             alt="WebGoat"
-            className="h-20 sm:h-24 md:h-28 w-auto drop-shadow-2xl"
+            className="h-20 sm:h-24 md:h-28 w-auto drop-shadow-2xl rounded-2xl"
             initial={{ y: -50, opacity: 0, rotate: -10 }}
             animate={{ y: 0, opacity: 1, rotate: 0 }}
             transition={{ duration: 1, delay: 0.8, type: 'spring' }}

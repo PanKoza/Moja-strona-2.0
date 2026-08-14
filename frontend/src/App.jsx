@@ -18,11 +18,13 @@ import PortfolioPage from './components/PortfolioPage'
 import CertificatesPage from './components/CertificatesPage'
 import FloatingContact from './components/FloatingContact'
 import CookieConsent from './components/CookieConsent'
+import WebsiteQuiz from './components/WebsiteQuiz'
 
 function HomePage() {
   return (
     <>
       <HeroSection />
+      <WebsiteQuiz />
       <PromoSection />
       <ServicesSection />
       <WhyWebsiteTeaser />
@@ -43,11 +45,11 @@ function App() {
           <main>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/uslugi/:slug" element={<ServicePage />} />
-              <Route path="/lokalizacja/:city" element={<LocalCityPage />} />
-              <Route path="/dlaczego-strona-internetowa" element={<WhyWebsitePage />} />
-              <Route path="/portfolio" element={<PortfolioPage />} />
-              <Route path="/certyfikaty" element={<CertificatesPage />} />
+              <Route path="/uslugi/:slug" element={<><ServicePage /><WebsiteQuiz /></>} />
+              <Route path="/lokalizacja/:city" element={<><LocalCityPage /><WebsiteQuiz /></>} />
+              <Route path="/dlaczego-strona-internetowa" element={<><WhyWebsitePage /><WebsiteQuiz /></>} />
+              <Route path="/portfolio" element={<><PortfolioPage /><WebsiteQuiz /></>} />
+              <Route path="/certyfikaty" element={<><CertificatesPage /><WebsiteQuiz /></>} />
             </Routes>
           </main>
           <Footer />

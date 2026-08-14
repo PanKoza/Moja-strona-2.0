@@ -155,7 +155,7 @@ export default function PromoSection() {
             whileTap={{ scale: 0.97 }}
             className="relative px-12 py-5 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white font-extrabold text-xl rounded-full overflow-hidden shadow-2xl shadow-orange-500/40 ring-2 ring-orange-400/40"
           >
-            <span className="relative z-10">🎯 Odbierz darmową wycenę</span>
+            <span className="relative z-10">🎯 Skorzystaj z promocji!</span>
             <motion.span
               className="absolute inset-0 bg-white/20"
               initial={{ x: '-100%' }}
