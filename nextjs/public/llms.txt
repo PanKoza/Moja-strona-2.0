@@ -1,0 +1,23 @@
+# WebGoat – Profesjonalne Tworzenie Stron Internetowych
+
+> WebGoat to agencja tworzenia stron internetowych i aplikacji webowych z siedzibą w Ząbkowicach Śląskich, obsługująca klientów na Dolnym Śląsku i w całej Polsce. Specjalizujemy się w responsywnych stronach WWW, sklepach internetowych, pozycjonowaniu SEO oraz aplikacjach webowych.
+
+## Strony
+
+- [Strona główna](https://webgoat.pl/)
+- [Dlaczego warto mieć stronę internetową?](https://webgoat.pl/dlaczego-strona-internetowa)
+- [Portfolio](https://webgoat.pl/portfolio)
+- [Certyfikaty](https://webgoat.pl/certyfikaty)
+
+## Usługi
+
+- [Tworzenie stron internetowych](https://webgoat.pl/uslugi/strony-internetowe)
+- [Sklepy internetowe](https://webgoat.pl/uslugi/sklepy-internetowe)
+- [Pozycjonowanie SEO](https://webgoat.pl/uslugi/pozycjonowanie-seo)
+- [Aplikacje webowe](https://webgoat.pl/uslugi/aplikacje-webowe)
+- [Web design](https://webgoat.pl/uslugi/web-design)
+- [Wsparcie techniczne](https://webgoat.pl/uslugi/wspieranie-techniczne)
+
+## Kontakt
+
+Kontakt z agencją możliwy jest przez formularz na stronie głównej oraz przez dane kontaktowe podane na stronie [webgoat.pl](https://webgoat.pl/).

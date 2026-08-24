@@ -1,0 +1,147 @@
+﻿'use client'
+import { HiHeart, HiPhone, HiMail, HiLocationMarker } from 'react-icons/hi'
+import { useRouter, usePathname } from 'next/navigation'
+import Link from 'next/link'
+
+const footerLinks = {
+  'Usługi': [
+    { name: 'Strony internetowe', href: '/uslugi/strony-internetowe' },
+    { name: 'Sklepy online', href: '/uslugi/sklepy-internetowe' },
+    { name: 'Pozycjonowanie SEO', href: '/uslugi/pozycjonowanie-seo' },
+    { name: 'Aplikacje webowe', href: '/uslugi/aplikacje-webowe' },
+  ],
+  'Firma': [
+    { name: 'O nas', href: '/#o-nas' },
+    { name: 'Proces', href: '/#proces' },
+    { name: 'Kontakt', href: '/#kontakt' },
+  ],
+  'Lokalizacje': [
+    { name: 'Wrocław', href: '/lokalizacja/wroclaw' },
+    { name: 'Świdnica', href: '/lokalizacja/swidnica' },
+    { name: 'Kłodzko', href: '/lokalizacja/klodzko' },
+    { name: 'Dzierżoniów', href: '/lokalizacja/dzierzoniow' },
+    { name: 'Ząbkowice Śląskie', href: '/lokalizacja/zabkowice-slaskie' },
+    { name: 'Nysa', href: '/lokalizacja/nysa' },
+    { name: 'Oława', href: '/lokalizacja/olawa' },
+    { name: 'Trzebnica', href: '/lokalizacja/trzebnica' },
+    { name: 'Prusice', href: '/lokalizacja/prusice' },
+    { name: 'Dolnośląskie', href: '/lokalizacja/dolnoslaskie' },
+  ],
+}
+
+export default function Footer() {
+  const router = useRouter()
+  const pathname = usePathname()
+
+  const handleHashClick = (e, href) => {
+    e.preventDefault()
+    if (href.startsWith('/#')) {
+      const hash = href.slice(1)
+      if (pathname !== '/') {
+        router.push('/' + hash)
+      } else {
+        const el = document.querySelector(hash)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
+
+  return (
+    <footer className="relative border-t border-primary-900/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+          {/* Brand */}
+          <div className="md:col-span-2">
+            <a href="/#hero" onClick={(e) => handleHashClick(e, '/#hero')} className="inline-flex items-center gap-3 mb-4">
+              <img src="/logo_WebGoat.png" alt="WebGoat" className="h-8 w-auto" />
+              <span className="text-lg font-bold font-[family-name:var(--font-heading)] text-white">
+                Web<span className="text-primary-400">Goat</span>
+              </span>
+            </a>
+            <p className="text-gray-400 text-sm leading-relaxed max-w-md mb-4">
+              Specjalizujemy się w <strong className="text-primary-300">tworzeniu stron internetowych</strong> w Ząbkowicach Śląskich i na Dolnym Śląsku.
+              Nowoczesne technologie, kreatywny design i indywidualne podejście do każdego projektu biznesowego.
+            </p>
+            {/* NAP - Name Address Phone — widoczne dla Google i użytkowników */}
+            <address className="not-italic text-sm text-gray-400 space-y-2 mb-4">
+              <a
+                href="https://maps.google.com/?q=Z%C4%85bkowice+%C5%9Al%C4%85skie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-primary-300 transition-colors"
+              >
+                <HiLocationMarker className="w-4 h-4 text-primary-400 flex-shrink-0" />
+                Ząbkowice Śląskie, Dolny Śląsk
+              </a>
+              <a
+                href="tel:+48883821301"
+                className="flex items-center gap-2 hover:text-primary-300 transition-colors"
+              >
+                <HiPhone className="w-4 h-4 text-primary-400 flex-shrink-0" />
+                +48 883 821 301
+              </a>
+              <a
+                href="mailto:jakub.kuzakowski@gmail.com"
+                className="flex items-center gap-2 hover:text-primary-300 transition-colors"
+              >
+                <HiMail className="w-4 h-4 text-primary-400 flex-shrink-0" />
+                jakub.kuzakowski@gmail.com
+              </a>
+            </address>
+            <div className="flex gap-4">
+              {/* Social icons placeholder */}
+              {['facebook', 'instagram', 'linkedin'].map((social) => (
+                <a
+                  key={social}
+                  href="#"
+                  className="w-10 h-10 rounded-lg bg-primary-900/50 border border-primary-800/50 flex items-center justify-center text-gray-400 hover:text-primary-400 hover:border-primary-600 transition-all duration-300"
+                  aria-label={social}
+                >
+                  <span className="text-xs font-bold uppercase">{social[0]}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Links */}
+          {Object.entries(footerLinks).map(([title, links]) => (
+            <div key={title}>
+              <h3 className="text-white font-semibold font-[family-name:var(--font-heading)] mb-4">{title}</h3>
+              <ul className="space-y-2">
+                {links.map((link) => (
+                  <li key={link.name}>
+                    {link.href.startsWith('/#') ? (
+                      <a
+                        href={link.href}
+                        onClick={(e) => handleHashClick(e, link.href)}
+                        className="text-sm text-gray-400 hover:text-primary-300 transition-colors"
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link href={link.href}
+                        className="text-sm text-gray-400 hover:text-primary-300 transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom bar */}
+        <div className="mt-12 pt-8 border-t border-primary-900/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-gray-500">
+            &copy; {new Date().getFullYear()} WebGoat. Wszystkie prawa zastrzeżone.
+          </p>
+          <p className="text-sm text-gray-500 flex items-center gap-1">
+            Stworzone z <HiHeart className="w-4 h-4 text-red-500" /> w Ząbkowicach Śląskich
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
