@@ -1,0 +1,41 @@
+# WebGoat – Profesjonalne Tworzenie Stron Internetowych
+
+> WebGoat to studio tworzenia stron internetowych i aplikacji webowych z Ząbkowic Śląskich (woj. dolnośląskie), obsługujące firmy z Dolnego Śląska i całej Polski. Specjalizujemy się w responsywnych stronach WWW (strona wizytówkowa od 1500 zł), sklepach internetowych, pozycjonowaniu SEO, aplikacjach webowych, brandingu i opiece technicznej nad stronami.
+
+## Strony
+
+- [Strona główna](https://webgoat.pl/)
+- [Dlaczego warto mieć stronę internetową?](https://webgoat.pl/dlaczego-strona-internetowa)
+- [Portfolio – realizacje](https://webgoat.pl/portfolio)
+- [Certyfikaty](https://webgoat.pl/certyfikaty)
+- [Polityka prywatności](https://webgoat.pl/polityka-prywatnosci)
+
+## Usługi
+
+- [Tworzenie stron internetowych](https://webgoat.pl/uslugi/strony-internetowe)
+- [Sklepy internetowe](https://webgoat.pl/uslugi/sklepy-internetowe)
+- [Pozycjonowanie SEO](https://webgoat.pl/uslugi/pozycjonowanie-seo)
+- [Aplikacje webowe](https://webgoat.pl/uslugi/aplikacje-webowe)
+- [Branding i design](https://webgoat.pl/uslugi/branding-design)
+- [Wsparcie techniczne](https://webgoat.pl/uslugi/wsparcie-techniczne)
+
+## Obszar działania
+
+- [Ząbkowice Śląskie](https://webgoat.pl/lokalizacja/zabkowice-slaskie)
+- [Kłodzko](https://webgoat.pl/lokalizacja/klodzko)
+- [Dzierżoniów](https://webgoat.pl/lokalizacja/dzierzoniow)
+- [Kamieniec Ząbkowicki](https://webgoat.pl/lokalizacja/kamieniec-zabkowicki)
+- [Świdnica](https://webgoat.pl/lokalizacja/swidnica)
+- [Nysa](https://webgoat.pl/lokalizacja/nysa)
+- [Wrocław](https://webgoat.pl/lokalizacja/wroclaw)
+- [Oława](https://webgoat.pl/lokalizacja/olawa)
+- [Trzebnica](https://webgoat.pl/lokalizacja/trzebnica)
+- [Prusice](https://webgoat.pl/lokalizacja/prusice)
+- [Województwo dolnośląskie](https://webgoat.pl/lokalizacja/dolnoslaskie)
+
+## Kontakt
+
+- Telefon: +48 883 821 301
+- E-mail: jakub.kuzakowski@gmail.com
+- Formularz: https://webgoat.pl/#kontakt
+- Lokalizacja: Ząbkowice Śląskie, 57-200, dolnośląskie

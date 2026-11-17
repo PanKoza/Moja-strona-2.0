@@ -1,0 +1,18 @@
+# Zależności
+node_modules/
+
+# Buildy Next.js
+.next/
+out/
+
+# Środowisko
+.env
+.env*.local
+
+# Vercel
+.vercel
+
+# Systemowe / edytor / logi
+.DS_Store
+Thumbs.db
+*.log
