@@ -4,38 +4,38 @@
 
 ## Strony
 
-- [Strona główna](https://webgoat.pl/)
-- [Dlaczego warto mieć stronę internetową?](https://webgoat.pl/dlaczego-strona-internetowa)
-- [Portfolio – realizacje](https://webgoat.pl/portfolio)
-- [Certyfikaty](https://webgoat.pl/certyfikaty)
-- [Polityka prywatności](https://webgoat.pl/polityka-prywatnosci)
+- [Strona główna](https://www.webgoat.pl/)
+- [Dlaczego warto mieć stronę internetową?](https://www.webgoat.pl/dlaczego-strona-internetowa)
+- [Portfolio – realizacje](https://www.webgoat.pl/portfolio)
+- [Certyfikaty](https://www.webgoat.pl/certyfikaty)
+- [Polityka prywatności](https://www.webgoat.pl/polityka-prywatnosci)
 
 ## Usługi
 
-- [Tworzenie stron internetowych](https://webgoat.pl/uslugi/strony-internetowe)
-- [Sklepy internetowe](https://webgoat.pl/uslugi/sklepy-internetowe)
-- [Pozycjonowanie SEO](https://webgoat.pl/uslugi/pozycjonowanie-seo)
-- [Aplikacje webowe](https://webgoat.pl/uslugi/aplikacje-webowe)
-- [Branding i design](https://webgoat.pl/uslugi/branding-design)
-- [Wsparcie techniczne](https://webgoat.pl/uslugi/wsparcie-techniczne)
+- [Tworzenie stron internetowych](https://www.webgoat.pl/uslugi/strony-internetowe)
+- [Sklepy internetowe](https://www.webgoat.pl/uslugi/sklepy-internetowe)
+- [Pozycjonowanie SEO](https://www.webgoat.pl/uslugi/pozycjonowanie-seo)
+- [Aplikacje webowe](https://www.webgoat.pl/uslugi/aplikacje-webowe)
+- [Branding i design](https://www.webgoat.pl/uslugi/branding-design)
+- [Wsparcie techniczne](https://www.webgoat.pl/uslugi/wsparcie-techniczne)
 
 ## Obszar działania
 
-- [Ząbkowice Śląskie](https://webgoat.pl/lokalizacja/zabkowice-slaskie)
-- [Kłodzko](https://webgoat.pl/lokalizacja/klodzko)
-- [Dzierżoniów](https://webgoat.pl/lokalizacja/dzierzoniow)
-- [Kamieniec Ząbkowicki](https://webgoat.pl/lokalizacja/kamieniec-zabkowicki)
-- [Świdnica](https://webgoat.pl/lokalizacja/swidnica)
-- [Nysa](https://webgoat.pl/lokalizacja/nysa)
-- [Wrocław](https://webgoat.pl/lokalizacja/wroclaw)
-- [Oława](https://webgoat.pl/lokalizacja/olawa)
-- [Trzebnica](https://webgoat.pl/lokalizacja/trzebnica)
-- [Prusice](https://webgoat.pl/lokalizacja/prusice)
-- [Województwo dolnośląskie](https://webgoat.pl/lokalizacja/dolnoslaskie)
+- [Ząbkowice Śląskie](https://www.webgoat.pl/lokalizacja/zabkowice-slaskie)
+- [Kłodzko](https://www.webgoat.pl/lokalizacja/klodzko)
+- [Dzierżoniów](https://www.webgoat.pl/lokalizacja/dzierzoniow)
+- [Kamieniec Ząbkowicki](https://www.webgoat.pl/lokalizacja/kamieniec-zabkowicki)
+- [Świdnica](https://www.webgoat.pl/lokalizacja/swidnica)
+- [Nysa](https://www.webgoat.pl/lokalizacja/nysa)
+- [Wrocław](https://www.webgoat.pl/lokalizacja/wroclaw)
+- [Oława](https://www.webgoat.pl/lokalizacja/olawa)
+- [Trzebnica](https://www.webgoat.pl/lokalizacja/trzebnica)
+- [Prusice](https://www.webgoat.pl/lokalizacja/prusice)
+- [Województwo dolnośląskie](https://www.webgoat.pl/lokalizacja/dolnoslaskie)
 
 ## Kontakt
 
 - Telefon: +48 883 821 301
 - E-mail: jakub.kuzakowski@gmail.com
-- Formularz: https://webgoat.pl/#kontakt
+- Formularz: https://www.webgoat.pl/#kontakt
 - Lokalizacja: Ząbkowice Śląskie, 57-200, dolnośląskie

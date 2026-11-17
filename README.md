@@ -1,6 +1,6 @@
 # WebGoat — strona studia
 
-Strona [webgoat.pl](https://webgoat.pl): tworzenie stron internetowych, Ząbkowice Śląskie i Dolny Śląsk.
+Strona [webgoat.pl](https://www.webgoat.pl): tworzenie stron internetowych, Ząbkowice Śląskie i Dolny Śląsk.
 
 **Stack:** Next.js 15 (App Router, statyczne generowanie), React 19, Tailwind CSS 4, GSAP + ScrollTrigger + SplitText, Lenis, framer-motion, komponenty z React Bits. Formularze: Formspree. Statystyki: Vercel Analytics.
 

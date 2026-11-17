@@ -10,13 +10,8 @@ const nextConfig = {
       // Stare adresy z poprzedniej sitemapy — mogły trafić do indeksu Google
       { source: '/uslugi/web-design', destination: '/uslugi/branding-design', permanent: true },
       { source: '/uslugi/wspieranie-techniczne', destination: '/uslugi/wsparcie-techniczne', permanent: true },
-      // Wariant z www → domena główna (jeśli www jest podpięte w Vercel)
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.webgoat.pl' }],
-        destination: 'https://webgoat.pl/:path*',
-        permanent: true,
-      },
+      // Przekierowanie webgoat.pl → www.webgoat.pl robi Vercel (Settings → Domains), nie kod —
+      // reguła w obie strony powodowała pętlę przekierowań.
     ]
   },
 }
